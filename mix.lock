@@ -1,0 +1,5 @@
+%{"erpcgen": {:hex, :erpcgen, "1.1.1", "e88c82f859a82da6f066bc8a8fe5ccb44402e7a52e82b71089ed84fd68a5c77d", [:rebar3], []},
+  "procket": {:hex, :procket, "0.9.3", "593e907645307bc854ce3532f3f9c07987d8dc9848180cd2ee408fd92b22cc1e", [:rebar3], []},
+  "quickrand": {:hex, :quickrand, "1.7.2", "e856f3c69fec00d1acca8e56cb452b650e838d3a9720811410f439121efafe59", [:rebar3], []},
+  "uuid": {:hex, :uuid_erl, "1.7.2", "d596c8dd01a4ae48b9d8d51832ccc8f8302bf67acd01336aec3fcfae6b9d2bc2", [:rebar3], [{:quickrand, "~> 1.7.2", [hex: :quickrand, optional: false]}]},
+  "verx": {:git, "https://github.com/sunchess/verx.git", "916b5c57e871be24448aa71fcd7fae64e342b9e3", []}}

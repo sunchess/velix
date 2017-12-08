@@ -22,7 +22,7 @@ defmodule Velix.Mixfile do
   defp deps do
     [
       # {:dep_from_hexpm, "~> 0.3.0"},
-      {:verx, git: "https://github.com/sunchess/verx.git", override: true},
+      {:verx, git: "git://github.com/sunchess/verx.git", override: true, branch: :master},
       {:quickrand, "~> 1.7.2"}
     ]
   end

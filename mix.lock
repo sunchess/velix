@@ -2,4 +2,4 @@
   "procket": {:hex, :procket, "0.9.3", "593e907645307bc854ce3532f3f9c07987d8dc9848180cd2ee408fd92b22cc1e", [:rebar3], []},
   "quickrand": {:hex, :quickrand, "1.7.2", "e856f3c69fec00d1acca8e56cb452b650e838d3a9720811410f439121efafe59", [:rebar3], []},
   "uuid": {:hex, :uuid_erl, "1.7.2", "d596c8dd01a4ae48b9d8d51832ccc8f8302bf67acd01336aec3fcfae6b9d2bc2", [:rebar3], [{:quickrand, "~> 1.7.2", [hex: :quickrand, optional: false]}]},
-  "verx": {:git, "git://github.com/sunchess/verx.git", "789cb72b93afae14e1a96f862ea574d52e905bf8", [branch: :master]}}
+  "verx": {:git, "git://github.com/sunchess/verx.git", "a254c8e32aeb0e1f96aa909ce5949552aeeda0a4", [branch: :master]}}

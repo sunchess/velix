@@ -1,6 +1,6 @@
 # Velix
 
-Elixir wrapper for verx lib https://github.com/msantos/verx
+Elixir library to allow you libvirt base functions
 
 ## Installation
 
@@ -105,7 +105,7 @@ Velix.Vm.list
  }}
 ```
 
-## In functions that described below the identifier argument can be id or name of vm.
+### In functions that described below the identifier argument can be id or name of vm.
 
 Stop the vm.
 

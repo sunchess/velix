@@ -10,7 +10,7 @@ defmodule Velix.Vm do
     {:ok, [num_run]} = Verx.connect_num_of_domains(ref)
 
     {:ok, [shutoff]} = Verx.connect_list_defined_domains(ref, [num_def])
-    {:ok, [running]} = Verx.connect_list_domains(Ref, [num_run])
+    {:ok, [running]} = Verx.connect_list_domains(ref, [num_run])
 
     {:ok, [{running, info(ref, running)},
              {shutoff, info(ref, shutoff)}]}

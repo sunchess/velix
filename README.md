@@ -105,7 +105,7 @@ Velix.Vm.list
  }}
 ```
 
-##In functions that described below the identifier argument can be id or name of vm.
+## In functions that described below the identifier argument can be id or name of vm.
 
 Stop the vm.
 
@@ -159,7 +159,7 @@ Active Domains: 7
 Remove the vm
 
 ```elixir
- Velix.Vm.remove("one-666")
+Velix.Vm.remove("one-666")
 :ok
 ```
 

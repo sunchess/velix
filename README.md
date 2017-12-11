@@ -105,7 +105,7 @@ Velix.Vm.list
  }}
 ```
 
-### In functions that described below the identifier argument can be id or name of vm.
+### In described below functions identifier argument can be id or name of vm
 
 Stop the vm.
 

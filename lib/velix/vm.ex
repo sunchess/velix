@@ -69,6 +69,28 @@ defmodule Velix.Vm do
     end
   end
 
+  def run(name_or_id) do
+    {:ok, ref} = connect()
+
+    try do
+      {:ok, domain} = lookup(ref, name_or_id)
+
+      if !running?(ref, domain) do
+        # Start the VM
+        :ok = Verx.domain_create(ref, [domain])
+
+        {:ok, [active]} = Verx.connect_num_of_domains(ref)
+        :io.format("Active Domains: ~p~n", [active])
+      else
+        {name, _, _} = domain
+        IO.puts("Vm #{name} is running")
+      end
+
+      :ok
+    after
+      close(ref)
+    end
+  end
 
   # Get the domain resource
   def lookup(ref, id) when is_integer(id) do

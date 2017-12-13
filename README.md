@@ -179,7 +179,7 @@ Velix.Net.list
  }}
 ```
 
-Create netword from xml
+Create network from xml
 
 ```elixir
 Velix.Net.create_xml

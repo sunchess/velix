@@ -163,6 +163,64 @@ Velix.Vm.remove("one-666")
 :ok
 ```
 
+## Networks
+
+List of networks
+
+```elixir
+Velix.Net.list
+{:ok,
+ %{
+   running: [
+     {"default",
+      <<61, 156, 232, 239, 226, 81, 77, 0, 156, 41, 125, 64, 107, 73, 240, 209>>}
+   ],
+   shutoff: []
+ }}
+```
+
+Create netword from xml
+
+```elixir
+Velix.Net.create_xml
+{:ok,
+ [
+   {"ovs-network",
+    <<103, 92, 185, 11, 103, 229, 67, 132, 157, 143, 14, 194, 93, 206, 68, 45>>}
+ ]}
+
+Velix.Net.list
+{:ok,
+ %{
+   running: [
+     {"default",
+      <<61, 156, 232, 239, 226, 81, 77, 0, 156, 41, 125, 64, 107, 73, 240, 209>>},
+     {"ovs-network",
+      <<103, 92, 185, 11, 103, 229, 67, 132, 157, 143, 14, 194, 93, 206, 68,
+        45>>}
+   ],
+   shutoff: []
+ }}
+```
+
+Remove the network
+
+```elixir
+Velix.Net.remove
+:ok
+
+ Velix.Net.list
+{:ok,
+ %{
+   running: [
+     {"default",
+      <<61, 156, 232, 239, 226, 81, 77, 0, 156, 41, 125, 64, 107, 73, 240, 209>>}
+   ],
+   shutoff: []
+}}
+```
+
+
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/velix](https://hexdocs.pm/velix).

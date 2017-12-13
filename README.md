@@ -182,7 +182,7 @@ Velix.Net.list
 Create network from xml
 
 ```elixir
-Velix.Net.create_xml
+Velix.Net.create_xml("path/to/xml")
 {:ok,
  [
    {"ovs-network",

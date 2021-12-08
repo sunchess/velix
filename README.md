@@ -1,11 +1,10 @@
 # Velix
 
-Elixir library to allow you libvirt base functions
+Elixir wrapper for [verx](https://github.com/msantos/verx) package 
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `velix` to your list of dependencies in `mix.exs`:
+From packages by adding `velix` to dependencies list `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,10 +14,7 @@ def deps do
 end
 ```
 
-
 ## Examples
-
-Run in project directory
 
 ```
 git clone https://github.com/sunchess/velix.git
@@ -30,7 +26,7 @@ mix deps.compile
 iex -S mix
 ```
 
-List of vms
+### Retrive virtual machines
 
 ```elixir
 Velix.Vm.list
@@ -61,10 +57,10 @@ Velix.Vm.list
  }}
 ```
 
-Create Vm from XML file
+### Create a virtural machine from XML file
 
 ```elixir
-#if you have path to xml /root/vmsdump/test5.xml
+# if you have path to xml /root/vmsdump/test5.xml
 
 Velix.Vm.create_xml
 
@@ -105,10 +101,9 @@ Velix.Vm.list
  }}
 ```
 
-### In described below functions identifier argument can be id or name of vm
+### The identifier argument is virtual machine's id or name 
 
-Stop the vm.
-
+### Stop a virtual machine.
 
 ```elixir
 Velix.Vm.stop("one-666")
@@ -148,7 +143,7 @@ Velix.Vm.list
  }}
 ```
 
-Run the vm
+### Run a virtual machine
 
 ```elixir
 Velix.Vm.run("one-666")
@@ -156,7 +151,7 @@ Active Domains: 7
 :ok
 ```
 
-Remove the vm
+## Remove a virtual machine
 
 ```elixir
 Velix.Vm.remove("one-666")
@@ -165,7 +160,7 @@ Velix.Vm.remove("one-666")
 
 ## Networks
 
-List of networks
+### Retrive networks
 
 ```elixir
 Velix.Net.list
@@ -179,7 +174,7 @@ Velix.Net.list
  }}
 ```
 
-Create network from xml
+### Create a network from xml
 
 ```elixir
 Velix.Net.create_xml("path/to/xml")
@@ -203,7 +198,7 @@ Velix.Net.list
  }}
 ```
 
-Remove the network
+### Remove a network
 
 ```elixir
 Velix.Net.remove
@@ -219,9 +214,3 @@ Velix.Net.remove
    shutoff: []
 }}
 ```
-
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/velix](https://hexdocs.pm/velix).
-
